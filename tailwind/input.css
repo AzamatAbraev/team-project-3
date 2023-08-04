@@ -1,0 +1,13 @@
+@import "../css/font.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+  }
+}
