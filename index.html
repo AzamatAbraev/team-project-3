@@ -14,10 +14,7 @@
         >
           <div class="header__logo flex">
             <a href="index.html">
-              <img
-                src="images/components/header/logo.svg"
-                alt="Company Logo"
-              />
+              <img src="images/components/header/logo.svg" alt="Company Logo" />
             </a>
           </div>
           <div class="header__menu hidden lg:flex">
@@ -74,12 +71,13 @@
             </ul>
           </div>
           <div class="hamburger flex lg:hidden" id="navbar-open">
-            <button class="hamburger__btn">
+            <button class="hamburger__btn z-[100]">
               <img src="../images/components/header/menu.svg" alt="Menu" />
             </button>
           </div>
           <div
             id="navbar-responsive"
+            style="transition: all 0.5s ease"
             class="navbar__responsive flex lg:hidden fixed top-[80px] right-[-100%] w-full items-center justify-center bg-[#EDF7FF] pt-[20px] pb-[20px] duration-[2000] transition"
           >
             <ul
@@ -136,7 +134,7 @@
               </li>
             </ul>
             <button
-              class="fixed top-[16px] opacity-0 right-[20px]"
+              class="fixed top-[16px] opacity-0 right-[20px] z-[-1]"
               id="navbar-close"
             >
               <img src="images/components/header/close.svg" alt="Close" />
@@ -145,15 +143,158 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="mt-[86.74px]">
       <section class="home">
-        <div
-          class="container m-w-[1320px] pl-[20px] pr-[20px] ml-[auto] mr-[auto]"
-        >
+        <div class="with-us-1 mt-[70px] mb-[70px]">
+          <div
+            class="container max-w-[1320px] pl-[20px] pr-[20px] ml-[auto] mr-[auto]"
+          >
+            <div class="with-us-container grid grid-cols-1 lg:grid-cols-2">
+              <div class="flex flex-col justify-center items-start">
+                <h2
+                  class="text-[40px] text-[black] leading-[52px] sm:text-[64px] sm:leading-[72px]"
+                >
+                  We value human, organizational, and operational intelligence,
+                  not just artificial
+                </h2>
+                <p class="text-[18px] text-[#5B5B5B] leading-[30px] mt-[24px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam leo odio, sagittis quis ornare quis.
+                </p>
+                <button
+                  onclick="location.href='pages/careers.html'"
+                  class="bg-[#F58A07] text-[#fff] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[17px] border-solid border-[1px] transition ease-in-out duration-500 border-[#F58A07] hover:bg-[#ffffff] hover:text-[#F58A07] hover:border-[#F58A07] mt-[32px]"
+                >
+                  Work With Us
+                </button>
+              </div>
+              <div class="mt-[50px]">
+                <img
+                  src="../images/components/home-section/image-1.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-[#063255]">
+      <div class="container px-[20px] max-w-[1320px] ml-auto mr-auto py-[80px]">
+        <div
+          class="footer__top flex gap-[100px] max-[1000px]:flex-wrap max-[650px]:flex-col"
+        >
+          <div class="footer__col flex flex-col gap-[32.7px] items-start">
+            <a href="index.html">
+              <img src="images/components/footer/logo.svg" alt="logo" />
+            </a>
+            <h3 class="text-[#ffffff] text-[36px] max-w-[350px]">
+              Bespoke software solutions
+            </h3>
+            <div class="footer__icons flex gap-[16.88px]">
+              <a href="https://www.facebook.com/TeslaMotorsCorp/">
+                <img
+                  src="images/components/footer/facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="https://www.youtube.com/@tesla">
+                <img src="images/components/footer/youtube.svg" alt="Youtube" />
+              </a>
+              <a href="https://www.instagram.com/teslamotors/">
+                <img
+                  src="images/components/footer/instagram.svg"
+                  alt="Instagram"
+                />
+              </a>
+              <a href="https://twitter.com/Tesla">
+                <img src="images/components/footer/twitter.svg" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__col flex flex-col items-start gap-[28px]">
+            <h4 class="text-[#ffffff] text-[18px] font-[600]">Company</h4>
+            <div class="footer__links flex flex-col gap-[16px]">
+              <a
+                class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500]"
+                href="pages/about.html"
+                >About Us</a
+              >
+              <a
+                class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500]"
+                href="pages/careers.html"
+                >Careers</a
+              >
+              <a
+                class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500]"
+                href="pages/services.html"
+                >Services</a
+              >
+              <a
+                class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500]"
+                href="pages/blog.html"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <div class="footer__col flex flex-col">
+            <h4 class="text-[#ffffff] text-[18px] font-[600] mb-[26px]">
+              Connect
+            </h4>
+            <a
+              onclick="location.href='mailto:hi@finsweet.com';"
+              class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500] mb-[16px]"
+              >hi@finsweet.com</a
+            >
+            <a
+              onclick="location.href='mailto:hi@finsweet.com';"
+              class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500] mb-[16px]"
+              >+(123) 456-7890</a
+            >
+          </div>
+          <div class="footer__col flex flex-col items-start">
+            <h4 class="text-[#ffffff] text-[18px] font-[600] mb-[24px]">
+              Join Newsletter
+            </h4>
+            <form>
+              <input
+                required
+                type="email"
+                placeholder="Type email here"
+                class="text-[#9C9C9C] text-[16px] font-[500] outline-none py-[18px] rounded-[31px] pl-[32px] w-full bg-[#ffffff] mb-[16px]"
+              />
+              <button
+                type="submit"
+                class="bg-[#F58A07] border-none text-[#fff] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[31px] transition ease-in-out duration-500 hover:bg-[#ffffff] hover:text-[#F58A07]"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="footer__bottom mt-[80px] flex justify-between items-center max-[650px]:flex-col max-[650px]:items-start max-[650px]:gap-[16px]"
+        >
+          <p class="text-[#FFF] text-[16px] font-[500]">
+            © All rights reserved – Finsweet
+          </p>
+          <div class="privacy__policy flex gap-[32px]">
+            <a
+              class="text-[#FFF] text-[16px] font-[500] hover:text-[#F58A07]"
+              href="pages/privacy-policy.html"
+            >
+              Privacy Policy
+            </a>
+            <a
+              class="text-[#FFF] text-[16px] font-[500] hover:text-[#F58A07]"
+              href="pages/privacy-policy.html"
+            >
+              Terms & Conditions
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/header.js"></script>
   </body>
 </html>

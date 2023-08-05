@@ -64,8 +64,8 @@
               </li>
               <li class="nav__item">
                 <button
-                type="button"
-                onclick="location.href='https://github.com/AzamatAbraev/UzCoders_Project4'"
+                  type="button"
+                  onclick="location.href='https://github.com/AzamatAbraev/UzCoders_Project4'"
                   class="align-top bg-[#FEF4E7] text-[#F58A07] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[17px] border-solid border-[1px] transition ease-in-out duration-500 border-[#FEF4E7] hover:bg-[#F58A07] hover:text-[#FEF4E7] hover:border-[#F58A07]"
                 >
                   Clone Project
@@ -74,12 +74,18 @@
             </ul>
           </div>
           <div class="hamburger flex lg:hidden" id="navbar-open">
-            <button class="hamburger__btn">
+            <button class="hamburger__btn z-[100]">
               <img src="../images/components/header/menu.svg" alt="Menu" />
             </button>
           </div>
-          <div id="navbar-responsive" class="navbar__responsive flex lg:hidden fixed top-[80px] right-[-100%] w-full items-center justify-center bg-[#EDF7FF] pt-[20px] pb-[20px] duration-[2000] transition">
-            <ul class="nav__list flex flex-col items-center justify-center gap-[32px] max-w-[100%]">
+          <div
+            id="navbar-responsive"
+            style="transition: all 0.5s ease"
+            class="navbar__responsive flex lg:hidden fixed top-[80px] right-[-100%] w-full items-center justify-center bg-[#EDF7FF] pt-[20px] pb-[20px] duration-[2000] transition"
+          >
+            <ul
+              class="nav__list flex flex-col items-center justify-center gap-[32px] max-w-[100%]"
+            >
               <li class="nav__item">
                 <a
                   href="about.html"
@@ -122,15 +128,18 @@
               </li>
               <li class="nav__item">
                 <button
-                type="button"
-                onclick="location.href='https://github.com/AzamatAbraev/UzCoders_Project4'"
+                  type="button"
+                  onclick="location.href='https://github.com/AzamatAbraev/UzCoders_Project4'"
                   class="align-top bg-[#FEF4E7] text-[#F58A07] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[17px] border-solid border-[1px] transition ease-in-out duration-500 border-[#FEF4E7] hover:bg-[#F58A07] hover:text-[#FEF4E7] hover:border-[#F58A07]"
                 >
                   Clone Project
                 </button>
               </li>
             </ul>
-            <button class="fixed top-[16px] opacity-0 right-[20px]" id="navbar-close">
+            <button
+              class="fixed top-[16px] opacity-0 right-[20px] z-[-1]"
+              id="navbar-close"
+            >
               <img src="../images/components/header/close.svg" alt="Close" />
             </button>
           </div>
