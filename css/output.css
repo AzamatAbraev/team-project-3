@@ -657,6 +657,18 @@ a, button {
   top: 55%;
 }
 
+.bottom-\[40px\] {
+  bottom: 40px;
+}
+
+.left-\[\] {
+  left: ;
+}
+
+.left-\[40px\] {
+  left: 40px;
+}
+
 .z-\[-1\] {
   z-index: -1;
 }
@@ -751,6 +763,10 @@ a, button {
 
 .h-\[86\.55px\] {
   height: 86.55px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-full {
@@ -849,7 +865,15 @@ a, button {
   border-radius: 20px;
 }
 
+.rounded-\[50\%\] {
+  border-radius: 50%;
+}
+
 .border-\[1px\] {
+  border-width: 1px;
+}
+
+.border {
   border-width: 1px;
 }
 
@@ -869,6 +893,14 @@ a, button {
 .border-\[\#FEF4E7\] {
   --tw-border-opacity: 1;
   border-color: rgb(254 244 231 / var(--tw-border-opacity));
+}
+
+.border-\[\] {
+  border-color: ;
+}
+
+.border-\[50\%\] {
+  border-color: 50%;
 }
 
 .bg-\[\#063255\] {
@@ -894,6 +926,14 @@ a, button {
 .bg-\[\#ffffff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[transparent\] {
+  background-color: transparent;
+}
+
+.bg-inherit {
+  background-color: inherit;
 }
 
 .p-0 {
