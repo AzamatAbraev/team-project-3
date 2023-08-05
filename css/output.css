@@ -592,25 +592,96 @@ video {
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   padding: 0px;
   margin: 0px;
 }
 
+.navbar__responsive {
+  transition: 0.5s;
+}
+
 .fixed {
   position: fixed;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-\[-100\%\] {
+  right: -100%;
+}
+
+.right-\[20px\] {
+  right: 20px;
 }
 
 .top-0 {
   top: 0px;
 }
 
+.top-\[16px\] {
+  top: 16px;
+}
+
+.top-\[86px\] {
+  top: 86px;
+}
+
+.top-\[86\.55px\] {
+  top: 86.55px;
+}
+
+.top-\[84px\] {
+  top: 84px;
+}
+
+.top-\[80px\] {
+  top: 80px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-\[100\] {
+  z-index: 100;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
 .ml-\[auto\] {
   margin-left: auto;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .mr-\[auto\] {
+  margin-right: auto;
+}
+
+.mr-auto {
   margin-right: auto;
 }
 
@@ -620,6 +691,74 @@ body {
 
 .mt-\[50px\] {
   margin-top: 50px;
+}
+
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
+.mt-\[16px\] {
+  margin-top: 16px;
+}
+
+.mt-\[14px\] {
+  margin-top: 14px;
+}
+
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-\[84px\] {
+  height: 84px;
+}
+
+.h-\[86\.55px\] {
+  height: 86.55px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-\[100\%\] {
+  max-width: 100%;
+}
+
+.max-w-\[1320px\] {
+  max-width: 1320px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-\[32px\] {
+  gap: 32px;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded-\[17px\] {
@@ -659,9 +798,38 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[white\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#EDF7FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 247 255 / var(--tw-bg-opacity));
+}
+
+.p-0 {
+  padding: 0px;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.py-\[16px\] {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .py-\[18px\] {
@@ -677,8 +845,24 @@ body {
   padding-right: 20px;
 }
 
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
+.pb-\[\] {
+  padding-bottom: ;
+}
+
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-top {
+  vertical-align: top;
 }
 
 .text-\[16px\] {
@@ -766,6 +950,10 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -774,8 +962,46 @@ body {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-\[2000ms\] {
+  transition-duration: 2000ms;
+}
+
+.duration-\[20000ms\] {
+  transition-duration: 20000ms;
+}
+
+.duration-\[2000000ms\] {
+  transition-duration: 2000000ms;
+}
+
+.duration-\[200000ms\] {
+  transition-duration: 200000ms;
+}
+
+.duration-\[2000s\] {
+  transition-duration: 2000s;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-\[1000\] {
+  transition-duration: 1000;
+}
+
+.duration-\[2000\] {
+  transition-duration: 2000;
 }
 
 .ease-in-out {
@@ -805,4 +1031,24 @@ body {
 .hover\:text-\[\#FEF4E7\]:hover {
   --tw-text-opacity: 1;
   color: rgb(254 244 231 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
 }

@@ -5,9 +5,20 @@
 @tailwind utilities;
 
 @layer components {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
   body {
     font-family: 'Poppins', sans-serif;
     padding: 0px;
     margin: 0px;
+  }
+
+  .navbar__responsive {
+    transition: 0.5s;
   }
 }
