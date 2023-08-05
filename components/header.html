@@ -74,11 +74,11 @@
             </ul>
           </div>
           <div class="hamburger flex lg:hidden" id="navbar-open">
-            <button class="hamburger__btn">
+            <button class="hamburger__btn z-[100]">
               <img src="../images/components/header/menu.svg" alt="Menu" />
             </button>
           </div>
-          <div id="navbar-responsive" class="navbar__responsive flex lg:hidden fixed top-[80px] right-[-100%] w-full items-center justify-center bg-[#EDF7FF] pt-[20px] pb-[20px] duration-[2000] transition">
+          <div id="navbar-responsive" style="transition: all 0.5s ease;" class="navbar__responsive flex lg:hidden fixed top-[80px] right-[-100%] w-full items-center justify-center bg-[#EDF7FF] pt-[20px] pb-[20px] duration-[2000] transition">
             <ul class="nav__list flex flex-col items-center justify-center gap-[32px] max-w-[100%]">
               <li class="nav__item">
                 <a
@@ -130,7 +130,7 @@
                 </button>
               </li>
             </ul>
-            <button class="fixed top-[16px] opacity-0 right-[20px]" id="navbar-close">
+            <button class="fixed top-[16px] opacity-0 right-[20px] z-[-1]" id="navbar-close">
               <img src="../images/components/header/close.svg" alt="Close" />
             </button>
           </div>
