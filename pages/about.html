@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About section</title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body class="m-0 p-0">
+    <header class="bg-[#ffffff] fixed top-0 left-0 right-0 h-[86.55px]">
+      <nav>
+        <div
+          class="container flex justify-between items-center py-[16px] px-[20px] max-w-[1320px] ml-auto mr-auto"
+        >
+          <div class="header__logo flex">
+            <a href="../index.html">
+              <img
+                src="../images/components/header/logo.svg"
+                alt="Company Logo"
+              />
+            </a>
+          </div>
+          <div class="header__menu hidden lg:flex">
+            <ul class="nav__list flex items-center gap-[32px]">
+              <li class="nav__item">
+                <a
+                  href="about.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  About Us
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="careers.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Careers
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="services.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="blog.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Blog
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="contact.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Contact us
+                </a>
+              </li>
+              <li class="nav__item">
+                <button
+                  type="button"
+                  onclick="location.href='https://github.com/AzamatAbraev/UzCoders_Project4'"
+                  class="align-top bg-[#FEF4E7] text-[#F58A07] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[17px] border-solid border-[1px] transition ease-in-out duration-500 border-[#FEF4E7] hover:bg-[#F58A07] hover:text-[#FEF4E7] hover:border-[#F58A07]"
+                >
+                  Clone Project
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="hamburger flex lg:hidden" id="navbar-open">
+            <button class="hamburger__btn z-[100]">
+              <img src="../images/components/header/menu.svg" alt="Menu" />
+            </button>
+          </div>
+          <div
+            id="navbar-responsive"
+            style="transition: all 0.5s ease"
+            class="navbar__responsive flex lg:hidden fixed top-[80px] right-[-100%] w-full items-center justify-center bg-[#EDF7FF] pt-[20px] pb-[20px] duration-[2000] transition"
+          >
+            <ul
+              class="nav__list flex flex-col items-center justify-center gap-[32px] max-w-[100%]"
+            >
+              <li class="nav__item">
+                <a
+                  href="about.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  About Us
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="careers.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Careers
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="services.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="blog.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Blog
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="contact.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Contact us
+                </a>
+              </li>
+              <li class="nav__item">
+                <button
+                  type="button"
+                  onclick="location.href='https://github.com/AzamatAbraev/UzCoders_Project4'"
+                  class="align-top bg-[#FEF4E7] text-[#F58A07] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[17px] border-solid border-[1px] transition ease-in-out duration-500 border-[#FEF4E7] hover:bg-[#F58A07] hover:text-[#FEF4E7] hover:border-[#F58A07]"
+                >
+                  Clone Project
+                </button>
+              </li>
+            </ul>
+            <button
+              class="fixed top-[16px] opacity-0 right-[20px] z-[-1]"
+              id="navbar-close"
+            >
+              <img src="../images/components/header/close.svg" alt="Close" />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="../js/header.js"></script>
+  </body>
+</html>
