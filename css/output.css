@@ -46,7 +46,7 @@
 
 ::before,
 ::after {
-  --tw-content: "";
+  --tw-content: '';
 }
 
 /*
@@ -657,6 +657,30 @@ a, button {
   top: 80px;
 }
 
+.right-\[-20px\] {
+  right: -20px;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.left-\[-20px\] {
+  left: -20px;
+}
+
+.left-\[40px\] {
+  left: 40px;
+}
+
+.right-\[-40px\] {
+  right: -40px;
+}
+
+.top-\[128px\] {
+  top: 128px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -826,6 +850,10 @@ a, button {
 }
 
 .w-full {
+  width: 100%;
+}
+
+.w-\[100\%\] {
   width: 100%;
 }
 
@@ -1415,6 +1443,14 @@ a, button {
 }
 
 @media (min-width: 640px) {
+  .sm\:left-\[-20px\] {
+    left: -20px;
+  }
+
+  .sm\:right-\[-20px\] {
+    right: -20px;
+  }
+
   .sm\:ml-auto {
     margin-left: auto;
   }
