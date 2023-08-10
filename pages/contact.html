@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-us</title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
+    <header class="bg-[#ffffff] fixed top-0 left-0 right-0 h-[86.55px]">
+      <nav>
+        <div
+          class="container flex justify-between items-center py-[16px] px-[20px] max-w-[1320px] ml-auto mr-auto"
+        >
+          <div class="header__logo flex">
+            <a href="../index.html">
+              <img
+                src="../images/components/header/logo.svg"
+                alt="Company Logo"
+              />
+            </a>
+          </div>
+          <div class="header__menu hidden lg:flex">
+            <ul class="nav__list flex items-center gap-[32px]">
+              <li class="nav__item">
+                <a
+                  href="about.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  About Us
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="careers.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Careers
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="services.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="blog.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Blog
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="contact.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Contact us
+                </a>
+              </li>
+              <li class="nav__item">
+                <button
+                  type="button"
+                  onclick="location.href='https://github.com/AzamatAbraev/UzCoders_Project4'"
+                  class="align-top bg-[#FEF4E7] text-[#F58A07] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[17px] border-solid border-[1px] transition ease-in-out duration-500 border-[#FEF4E7] hover:bg-[#F58A07] hover:text-[#FEF4E7] hover:border-[#F58A07]"
+                >
+                  Clone Project
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="hamburger flex lg:hidden" id="navbar-open">
+            <button class="hamburger__btn z-[100]">
+              <img src="../images/components/header/menu.svg" alt="Menu" />
+            </button>
+          </div>
+          <div
+            id="navbar-responsive"
+            style="transition: all 0.5s ease"
+            class="navbar__responsive flex lg:hidden fixed top-[80px] right-[-100%] w-full items-center justify-center bg-[#EDF7FF] pt-[20px] pb-[20px] duration-[2000] transition"
+          >
+            <ul
+              class="nav__list flex flex-col items-center justify-center gap-[32px] max-w-[100%]"
+            >
+              <li class="nav__item">
+                <a
+                  href="about.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  About Us
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="careers.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Careers
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="services.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="blog.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Blog
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="contact.html"
+                  class="nav__link text-center text-[#394149] text-[16px] font-[600] leading-[24px] capitalize hover:text-[#F58A07]"
+                >
+                  Contact us
+                </a>
+              </li>
+              <li class="nav__item">
+                <button
+                  type="button"
+                  onclick="location.href='https://github.com/AzamatAbraev/UzCoders_Project4'"
+                  class="align-top bg-[#FEF4E7] text-[#F58A07] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[17px] border-solid border-[1px] transition ease-in-out duration-500 border-[#FEF4E7] hover:bg-[#F58A07] hover:text-[#FEF4E7] hover:border-[#F58A07]"
+                >
+                  Clone Project
+                </button>
+              </li>
+            </ul>
+            <button
+              class="fixed top-[16px] opacity-0 right-[20px] z-[-1]"
+              id="navbar-close"
+            >
+              <img src="../images/components/header/close.svg" alt="Close" />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pt-[140px] pb-[100px]">
+      <div class="question">
+        <div
+          class="container flex justify-between items-center py-[16px] px-[20px] max-w-[1320px] ml-auto mr-auto"
+        >
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-[40px] leading-[64px] font-semibold tracking-tighter align-center"
+          >
+            <div class="mb-[40px]">
+              <h3 class="text-[48px]">
+                Have a question ? Let’s get in touch with us.
+              </h3>
+              <p class="text-[#5B5B5B] text-[18px] leading-[30px] mt-[20px]">
+                Fill up the Form and ou team will get back to within 24 hrs
+              </p>
+            </div>
+            <div class="grid sm:grid-cols-2 grid-cols-1 gap-[20px] mb-[40px] ">
+              <div>
+                <h5 class="text-[24px]">Location</h5>
+                <p class="text-[#5B5B5B] text-[18px] leading-[30px]">
+                  DLF Cybercity, Bhubaneswar, India, &52050
+                </p>
+              </div>
+              <div>
+                <h5 class="text-[24px]">Contact Us</h5>
+                <p class="text-[#5B5B5B] text-[18px] leading-[30px]">
+                  020 7993 2905
+                </p>
+                <p class="text-[#5B5B5B] text-[18px] leading-[30px]">
+                  hi@finsweet.com
+                </p>
+              </div>
+            </div>
+            <div>
+              <form >
+              <input required class="bg-slate-100 w-full rounded-[27px] mb-[16px]"  type="text" placeholder="     First Name">
+              <input required class="bg-slate-100 w-full rounded-[27px] mb-[16px]"  type="text" placeholder="     Last Name">
+              <input required class="bg-slate-100 w-full rounded-[27px] mb-[16px]"  type="email" placeholder="     Email address">  
+              <input required class="bg-slate-100 w-full rounded-[27px] mb-[16px] h-[160px]"  type="text" placeholder="     Type message"> 
+              <button
+                type="submit"
+                class="bg-[#F58A07] border-none text-[#fff] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[31px] transition ease-in-out duration-500 hover:bg-[#ffffff] hover:text-[#F58A07]"
+              >
+              Submit
+              </button>
+              </form> 
+            </div>
+            <div>
+              <iframe class="h-[370px] rounded-[20px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.0730692531074!2d69.2012376758325!3d41.28551417131297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1sen!2s!4v1690132893419!5m2!1sen!2s" width="100%" height="703" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-[#063255]">
+      <div class="container px-[20px] max-w-[1320px] ml-auto mr-auto py-[80px]">
+        <div
+          class="footer__top flex gap-[100px] max-[1000px]:flex-wrap max-[650px]:flex-col"
+        >
+          <div class="footer__col flex flex-col gap-[32.7px] items-start">
+            <img src="../images/components/footer/logo.svg" alt="logo" />
+            <h3 class="text-[#ffffff] text-[36px] max-w-[350px]">
+              Bespoke software solutions
+            </h3>
+            <div class="footer__icons flex gap-[16.88px]">
+              <a href="https://www.facebook.com/TeslaMotorsCorp/">
+                <img
+                  src="../images/components/footer/facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="https://www.youtube.com/@tesla">
+                <img
+                  src="../images/components/footer/youtube.svg"
+                  alt="Youtube"
+                />
+              </a>
+              <a href="https://www.instagram.com/teslamotors/">
+                <img
+                  src="../images/components/footer/instagram.svg"
+                  alt="Instagram"
+                />
+              </a>
+              <a href="https://twitter.com/Tesla">
+                <img
+                  src="../images/components/footer/twitter.svg"
+                  alt="Twitter"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer__col flex flex-col items-start gap-[28px]">
+            <h4 class="text-[#ffffff] text-[18px] font-[600]">Company</h4>
+            <div class="footer__links flex flex-col gap-[16px]">
+              <a
+                class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500]"
+                href="about.html"
+                >About Us</a
+              >
+              <a
+                class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500]"
+                href="careers.html"
+                >Careers</a
+              >
+              <a
+                class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500]"
+                href="services.html"
+                >Services</a
+              >
+              <a
+                class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500]"
+                href="blog.html"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <div class="footer__col flex flex-col">
+            <h4 class="text-[#ffffff] text-[18px] font-[600] mb-[26px]">
+              Connect
+            </h4>
+            <a
+              href=""
+              onclick="location.href='mailto:hi@finsweet.com';"
+              class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500] mb-[16px]"
+              >hi@finsweet.com</a
+            >
+            <a
+              href=""
+              onclick="location.href='mailto:hi@finsweet.com';"
+              class="text-[#ffffff] hover:text-[#F58A07] text-[16px] font-[500] mb-[16px]"
+              >+(123) 456-7890</a
+            >
+          </div>
+          <div class="footer__col flex flex-col items-start">
+            <h4 class="text-[#ffffff] text-[18px] font-[600] mb-[24px]">
+              Join Newsletter
+            </h4>
+            <form>
+              <input
+                required
+                type="email"
+                placeholder="Type email here"
+                class="text-[#9C9C9C] text-[16px] font-[500] outline-none py-[18px] rounded-[31px] pl-[32px] w-full bg-[#ffffff] mb-[16px]"
+              />
+              <button
+                type="submit"
+                class="bg-[#F58A07] border-none text-[#fff] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[31px] transition ease-in-out duration-500 hover:bg-[#ffffff] hover:text-[#F58A07]"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="footer__bottom mt-[80px] flex justify-between items-center max-[650px]:flex-col max-[650px]:items-start max-[650px]:gap-[16px]"
+        >
+          <p class="text-[#FFF] text-[16px] font-[500]">
+            © All rights reserved – Finsweet
+          </p>
+          <div class="privacy__policy flex gap-[32px]">
+            <a
+              class="text-[#FFF] text-[16px] font-[500] hover:text-[#F58A07]"
+              href="privacy-policy.html"
+            >
+              Privacy Policy
+            </a>
+            <a
+              class="text-[#FFF] text-[16px] font-[500] hover:text-[#F58A07]"
+              href="privacy-policy.html"
+            >
+              Terms & Conditions
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
