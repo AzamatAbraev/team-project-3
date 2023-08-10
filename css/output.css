@@ -1179,6 +1179,10 @@ a, button {
   background-color: rgb(220 234 245 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -1246,8 +1250,16 @@ a, button {
   padding-top: 20px;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .align-top {
