@@ -1385,6 +1385,22 @@ a,
   width: 100%;
 }
 
+.w-\[\] {
+  width: 1;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
 .max-w-\[100\%\] {
   max-width: 100%;
 }
@@ -2220,9 +2236,8 @@ a,
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.text-\[\] {
+  color: white;
 }
 
 .opacity-0 {
