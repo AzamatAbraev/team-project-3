@@ -633,12 +633,28 @@ a, button {
   left: 2.5rem;
 }
 
+.left-\[-20px\] {
+  left: -20px;
+}
+
+.left-\[40px\] {
+  left: 40px;
+}
+
 .right-0 {
   right: 0px;
 }
 
 .right-\[-100\%\] {
   right: -100%;
+}
+
+.right-\[-20px\] {
+  right: -20px;
+}
+
+.right-\[-40px\] {
+  right: -40px;
 }
 
 .right-\[20px\] {
@@ -649,36 +665,20 @@ a, button {
   top: 0px;
 }
 
+.top-\[100px\] {
+  top: 100px;
+}
+
+.top-\[128px\] {
+  top: 128px;
+}
+
 .top-\[16px\] {
   top: 16px;
 }
 
 .top-\[80px\] {
   top: 80px;
-}
-
-.right-\[-20px\] {
-  right: -20px;
-}
-
-.top-\[100px\] {
-  top: 100px;
-}
-
-.left-\[-20px\] {
-  left: -20px;
-}
-
-.left-\[40px\] {
-  left: 40px;
-}
-
-.right-\[-40px\] {
-  right: -40px;
-}
-
-.top-\[128px\] {
-  top: 128px;
 }
 
 .z-50 {
@@ -821,6 +821,10 @@ a, button {
   width: 0.875rem;
 }
 
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .w-\[45\%\] {
   width: 45%;
 }
@@ -850,10 +854,6 @@ a, button {
 }
 
 .w-full {
-  width: 100%;
-}
-
-.w-\[100\%\] {
   width: 100%;
 }
 
