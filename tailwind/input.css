@@ -13,12 +13,31 @@
   }
 
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 0px;
     margin: 0px;
   }
 
-  a, button {
+  a,
+  button {
     transition: 0.5s;
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  .tab.active {
+    color: #f58a07;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 31px;
+    background: #fff;
+    border: 1px solid #f58a07;
   }
 }

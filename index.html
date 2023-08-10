@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body>
-    <header class="bg-[#ffffff] fixed top-0 left-0 right-0 h-[86.55px]">
+    <header class="bg-[#ffffff] fixed top-0 left-0 right-0 h-[86.55px] z-[100]">
       <nav>
         <div
           class="container flex justify-between items-center py-[16px] px-[20px] max-w-[1320px] ml-auto mr-auto"
@@ -144,36 +144,751 @@
       </nav>
     </header>
     <main class="mt-[86.74px]">
-      <section class="home">
-        <div class="with-us-1 mt-[70px] mb-[70px]">
+      <section
+        class="home bg-[#DCEAF5] pt-[85px] max-w-[400px]:pt-[45px] max-w-[400px]:pb-[20px]"
+      >
+        <div
+          class="container max-w-[1320px] pl-[20px] pr-[20px] ml-[auto] mr-[auto] grid grid-cols-2 max-[1100px]:grid-cols-1 py-0"
+        >
           <div
-            class="container max-w-[1320px] pl-[20px] pr-[20px] ml-[auto] mr-[auto]"
+            class="home__left flex flex-col mb-[147px] mt-[32px] max-w-[576px] max-[1100px]:max-w-full"
           >
-            <div class="with-us-container grid grid-cols-1 lg:grid-cols-2">
-              <div class="flex flex-col justify-center items-start">
-                <h2
-                  class="text-[40px] text-[black] leading-[52px] sm:text-[64px] sm:leading-[72px]"
+            <h1
+              class="text-[#1D3444] text-[64px] font-[600] leading-[72px] tracking-[-1.92px] max-[600px]:text-center max-[600px]:text-[48px] max-[600px]:leading-[55px]"
+            >
+              Prosper with our bespoke solutions
+            </h1>
+            <p
+              class="text-[#5B5B5B] text-[18px] font-[500] leading-[30px] tracking-[-1.44px] mt-[12px] mb-[32px] max-w-[510px] max-[1100px]:max-w-[610px] max-[600px]:text-center"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique
+            </p>
+            <div
+              class="home__buttons flex gap-[40px] items-center max-[600px]:justify-center max-[450px]:flex-col max-[450px]:gap-[20px]"
+            >
+              <button
+                onclick="location.href='pages/services.html'"
+                class="bg-[#F58A07] text-[#fff] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[21px] border-solid border-[1px] transition ease-in-out duration-500 border-[#F58A07] hover:bg-[#ffffff] hover:text-[#F58A07] hover:border-[#F58A07]"
+              >
+                See our services
+              </button>
+              <a
+                href="pages/services.html"
+                class="text-[#1D3444] text-[16px] font-[600] leading-[106.5%] capitalize hover:text-[#F58A07] hover:underline"
+                >See All Services
+              </a>
+            </div>
+            <p
+              class="text-[#8A959E] text-[18px] font-[400] leading-[30px] mt-[56px] mb-[18px] max-[600px]:text-center"
+            >
+              Worked with 100+ Companies
+            </p>
+            <div
+              class="home__logos flex gap-[45px] max-[450px]:flex-col max-[450px]:items-center"
+            >
+              <a href="https://www.facebook.com/">
+                <img src="images/pages/home/logo-1.svg" alt="Logo" />
+              </a>
+              <a href="https://www.instagram.com/">
+                <img src="images/pages/home/logo-2.svg" alt="Logo" />
+              </a>
+              <a href="https://www.twitter.com/">
+                <img src="images/pages/home/logo-3.svg" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="home__right relative">
+            <img
+              class="relative w-full h-full object-cover max-[1100px]:h-auto z-[10]"
+              src="images/pages/home/home-main.png"
+              alt="Home Main"
+            />
+            <div
+              class="h-[50%] w-[20%] bg-[#F58A07] mix-blend-multiply opacity-[0.75] rounded-t-[20px] absolute bottom-0 left-[10%] z-[11]"
+            ></div>
+            <div
+              class="h-[30%] w-[17%] bg-[#F58A07] mix-blend-multiply opacity-[0.75] rounded-t-[20px] absolute bottom-0 right-[10%] max-[1100px]:right-[20%]"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div
+          class="container max-w-[1320px] pl-[20px] pr-[20px] ml-[auto] mr-[auto] pt-[96px] pb-[96px]"
+        >
+          <div
+            class="services__header max-w-[735px] flex flex-col gap-[27px] mb-[64px]"
+          >
+            <h2
+              class="text-[#1D3444] text-[48px] font-[600] leading-[56px] tracking-[-1.44px] max-[400px]:text-[38px]"
+            >
+              We help more than 1500 companies from all sectors
+            </h2>
+            <p
+              class="text-[#5B5B5B] text-[18px] font-[500] leading-[30px] tracking-[-1.44px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
+              commodo suscipit tellus et pellentesque.
+            </p>
+          </div>
+          <div
+            class="services__row grid grid-cols-3 gap-x-[40px] max-[1000px]:grid-cols-2 max-[1000px]:gap-y-[40px] max-[700px]:grid-cols-1"
+          >
+            <div
+              class="services__card group cursor-pointer p-[15px] rounded-[10px] hover:bg-[#EDF7FF]"
+              style="transition: 0.5s ease-in-out"
+            >
+              <img
+                class="w-full"
+                src="images/pages/home/services-1.png"
+                alt="Business Strategy"
+              />
+              <h3
+                class="text-[#0D1317] text-[24px] font-[500] leading-[106.5%] tracking-[-0.72px] mt-[33px] pb-[px]"
+              >
+                Business strategy
+              </h3>
+              <p
+                class="text-[#5B5B5B] text-[18px] font-[500] leading-[28px] mt-[17px] mb-[24px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur sit amet eros blandit, hendrerit elit et,
+              </p>
+              <a href="pages/services.html#business-strategy" class="card__link flex gap-[8px]">
+                <p
+                  class="text-[#F58A07] text-[16px] font-[500] leading-[106.5%] hover:underline hover:text-[#e9b97e]"
+                  href="pages/services.html"
                 >
-                  We value human, organizational, and operational intelligence,
-                  not just artificial
-                </h2>
-                <p class="text-[18px] text-[#5B5B5B] leading-[30px] mt-[24px]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam leo odio, sagittis quis ornare quis.
+                  Learn More
                 </p>
-                <button
-                  onclick="location.href='pages/careers.html'"
-                  class="bg-[#F58A07] text-[#fff] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[17px] border-solid border-[1px] transition ease-in-out duration-500 border-[#F58A07] hover:bg-[#ffffff] hover:text-[#F58A07] hover:border-[#F58A07] mt-[32px]"
+                <img src="images/pages/home/arrow.svg" alt="Arrow" />
+              </a>
+            </div>
+            <div
+              class="services__card group cursor-pointer p-[15px] rounded-[10px] hover:bg-[#EDF7FF]"
+              style="transition: 0.5s ease-in-out"
+            >
+              <img
+                class="w-full"
+                src="images/pages/home/services-2.png"
+                alt="Digitalization"
+              />
+              <h3
+                class="text-[#0D1317] text-[24px] font-[500] leading-[106.5%] tracking-[-0.72px] mt-[33px]"
+              >
+                Digitalization
+              </h3>
+              <p
+                class="text-[#5B5B5B] text-[18px] font-[500] leading-[28px] mt-[17px] mb-[24px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur sit amet eros blandit, hendrerit elit et,
+              </p>
+              <a href="pages/services.html#digitalization" class="card__link flex gap-[8px]">
+                <p
+                  class="text-[#F58A07] text-[16px] font-[500] leading-[106.5%] hover:underline hover:text-[#e9b97e]"
                 >
-                  Work With Us
+                  Learn More
+                </p>
+                <img src="images/pages/home/arrow.svg" alt="Arrow" />
+              </a>
+            </div>
+            <div
+              class="services__card group cursor-pointer p-[15px] rounded-[10px] hover:bg-[#EDF7FF]"
+              style="transition: 0.5s ease-in-out"
+            >
+              <img
+                class="w-full"
+                src="images/pages/home/services-3.png"
+                alt="Risk assessment"
+              />
+              <h3
+                class="text-[#0D1317] text-[24px] font-[500] leading-[106.5%] tracking-[-0.72px] mt-[33px]"
+              >
+                Risk assessment
+              </h3>
+              <p
+                class="text-[#5B5B5B] text-[18px] font-[500] leading-[28px] mt-[17px] mb-[24px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur sit amet eros blandit, hendrerit elit et,
+              </p>
+              <a href="pages/services.html#risk-assessment" class="card__link flex gap-[8px]">
+                <p
+                  class="text-[#F58A07] text-[16px] font-[500] leading-[106.5%] hover:underline hover:text-[#e9b97e]"
+                >
+                  Learn More
+                </p>
+                <img src="images/pages/home/arrow.svg" alt="Arrow" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="solutions bg-[#EDF7FF] py-[96px]">
+        <div
+          class="container max-w-[1320px] pl-[20px] pr-[20px] ml-[auto] mr-[auto]"
+        >
+          <div
+            class="solutions__header flex gap-[40px] max-[680px]:flex-col mb-[64px]"
+          >
+            <h3
+              class="text-[#0D1317] text-[36px] font-[600] leading-[44px] tracking-[-1.08px]"
+            >
+              We are building software solution that solves your business
+              challenges
+            </h3>
+            <p class="text-[#1D3444] text-[18px] font-[500] leading-[30px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
+              commodo suscipit tellus et pellentesque.
+            </p>
+          </div>
+          <div
+            class="solutions__row grid grid-cols-3 gap-x-[38px] gap-y-[38px] max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1"
+          >
+            <div
+              class="solutions__card pt-[48px] pr-[26px] pb-[38px] pl-[38px] bg-[#FFF] rounded-[20px] group cursor-pointer hover:bg-[#063255]"
+              style="transition: 0.5s ease-in-out"
+            >
+              <img src="images/pages/home/solutions-1.svg" alt="Invoicing" />
+              <p
+                class="text-[#0D1317] text-[24px] font-[600] leading-[106.5%] tracking-[-0.72px] mt-[32px] mb-[16px] group-hover:text-[#fff]"
+              >
+                Invoicing
+              </p>
+              <p
+                class="text-[#5B5B5B] text-[16px] font-[500] leading-[28px] group-hover:text-[#fff]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur sit amet eros blandit, hendrerit elit et,
+              </p>
+            </div>
+            <div
+              class="solutions__card pt-[48px] pr-[26px] pb-[38px] pl-[38px] bg-[#FFF] rounded-[20px] group cursor-pointer hover:bg-[#063255]"
+              style="transition: 0.5s ease-in-out"
+            >
+              <img src="images/pages/home/solutions-2.svg" alt="Support" />
+              <p
+                class="text-[#0D1317] text-[24px] font-[600] leading-[106.5%] tracking-[-0.72px] mt-[32px] mb-[16px] group-hover:text-[#fff]"
+              >
+                Support
+              </p>
+              <p
+                class="text-[#5B5B5B] text-[16px] font-[500] leading-[28px] group-hover:text-[#fff]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur sit amet eros blandit, hendrerit elit et,
+              </p>
+            </div>
+            <div
+              class="solutions__card pt-[48px] pr-[26px] pb-[38px] pl-[38px] bg-[#FFF] rounded-[20px] group cursor-pointer hover:bg-[#063255]"
+              style="transition: 0.5s ease-in-out"
+            >
+              <img src="images/pages/home/solutions-3.svg" alt="Surveying" />
+              <p
+                class="text-[#0D1317] text-[24px] font-[600] leading-[106.5%] tracking-[-0.72px] mt-[32px] mb-[16px] group-hover:text-[#fff]"
+              >
+                Surveying
+              </p>
+              <p
+                class="text-[#5B5B5B] text-[16px] font-[500] leading-[28px] group-hover:text-[#fff]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur sit amet eros blandit, hendrerit elit et,
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats bg-[#fff] py-[96px]">
+        <div
+          class="container max-w-[1320px] pl-[20px] pr-[20px] ml-[auto] mr-[auto] grid grid-cols-2 gap-x-[47px] gap-y-[47px] max-[1050px]:grid-cols-1"
+        >
+          <div class="stats__desc">
+            <h2
+              class="text-[#0D1317] text-[48px] font-[600] leading-[56px] tracking-[-1.44px] max-[500px]:text-[38px]"
+            >
+              The energy of a start-up combined with 30 years of experience.
+            </h2>
+            <p
+              class="text-[#5B5B5B] text-[18px] font-[500] leading-[30px] mt-[32px] mb-[48px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
+              commodo suscipit tellus et pellentesque.
+            </p>
+            <div class="stats__row flex gap-[26px] max-[500px]:flex-col">
+              <div class="stats__card flex flex-col gap-[16px]">
+                <p class="text-[#F58A07] text-[36px] font-[700] leading-[50px]">
+                  15+
+                </p>
+                <h3
+                  class="text-[#0D1317] text-[24px] font-[600] leading-[106.5%] tracking-[-0.72px]"
+                >
+                  Awards received
+                </h3>
+                <p class="text-[#5B5B5B] text-[16px] font-[500] leading-[28px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur
+                  sit amet eros elit et.
+                </p>
+              </div>
+              <div class="stats__card flex flex-col gap-[16px]">
+                <p class="text-[#F58A07] text-[36px] font-[700] leading-[50px]">
+                  500+
+                </p>
+                <h3
+                  class="text-[#0D1317] text-[24px] font-[600] leading-[106.5%] tracking-[-0.72px]"
+                >
+                  Clients served
+                </h3>
+                <p class="text-[#5B5B5B] text-[16px] font-[500] leading-[28px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur
+                  sit amet eros elit et.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="stats__img relative">
+            <img
+              class="w-full h-full relative rounded-[20px] max-[1050px]:h-auto"
+              src="images/pages/home/stats-main.png"
+              alt="Stats"
+            />
+            <div
+              class="h-full w-[20%] bg-[#F58A07] rounded-tl-[20px] rounded-bl-[20px] mix-blend-multiply absolute bottom-0 left-0"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="tailwind-tabs mb-[128px]">
+        <div
+          class="container max-w-[1320px] pl-[20px] pr-[20px] ml-[auto] mr-[auto]"
+        >
+          <div class="app-tab bg-[#EDF7FF] rounded-[20px] p-[48px]">
+            <div class="">
+              <nav
+                class="tabs flex flex-col gap-[24px] sm:flex-row sm:gap-[24px]"
+              >
+                <button
+                  data-target="panel-1"
+                  class="tab active text-[#0632554d] text-[16px] font-[600] capitalize py-[8px] px-[24px] bg-[#FFF] rounded-[31px] border-[1px] border-solid border-[#A8BCCC] focus:outline-none"
+                >
+                  Business strategy
                 </button>
+                <button
+                  data-target="panel-2"
+                  class="tab text-[#0632554d] text-[16px] font-[600] capitalize py-[8px] px-[24px] bg-[#FFF] rounded-[31px] border-[1px] border-solid border-[#A8BCCC] focus:outline-none"
+                >
+                  Digitalization
+                </button>
+                <button
+                  data-target="panel-3"
+                  class="tab text-[#0632554d] text-[16px] font-[600] capitalize py-[8px] px-[24px] bg-[#FFF] rounded-[31px] border-[1px] border-solid border-[#A8BCCC] focus:outline-none"
+                >
+                  Risk assessment
+                </button>
+              </nav>
+            </div>
+            <div id="panels">
+              <div class="panel-1 tab-content active py-5 hidden">
+                <div
+                  class="tab__info mt-[80px] grid grid-cols-2 gap-x-[180px] gap-y-[40px] max-[1100px]:grid-cols-1"
+                >
+                  <div class="tab__left">
+                    <h2
+                      class="text-[#0D1317] text-[48px] font-[600] leading-[56px] tracking-[-1.44px] max-[500px]:text-[38px] max-[500px]:leading-[48px]"
+                    >
+                      Helping clients with research and strategy for their
+                      business
+                    </h2>
+                    <p
+                      class="text-[#5B5B5B] text-[18px] font-[500] leading-[30px] mt-[25px] mb-[15px]"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur sit amet eros blandit, hendrerit elit et, mattis
+                      purus. Vivamus commodo suscipit tellus et pellentesque.
+                    </p>
+                    <p
+                      class="text-[#5B5B5B] text-[18px] font-[500] leading-[30px] mb-[40px]"
+                    >
+                      Mattis purus. Vivamus commodo suscipit tellus et pellent.
+                      Curabitur sit amet eros blan esque.
+                    </p>
+                    <a class="flex gap-[8px]" href="pages/services.html">
+                      <p
+                        class="text-[#F58A07] text-[16px] font-[500] leading-[106.5%]"
+                      >
+                        See all services
+                      </p>
+                      <img src="images/pages/home/arrow.svg" alt="Arrow" />
+                    </a>
+                  </div>
+                  <div class="tab__right relative">
+                    <img
+                      class="w-full rounded-[20px] h-full object-cover relative"
+                      src="images/pages/home/app-tab-1.png"
+                      alt=""
+                    />
+                    <div
+                      class="w-[20%] h-full rounded-bl-[20px] rounded-tl-[20px] bg-[#F58A07] mix-blend-multiply absolute bottom-0 top-0 left-0 max-[1100px]:h-auto"
+                    ></div>
+                  </div>
+                </div>
               </div>
-              <div class="mt-[50px]">
+              <div class="panel-2 tab-content py-5">
+                <div
+                  class="tab__info mt-[80px] grid grid-cols-2 gap-x-[180px] gap-y-[40px] max-[1100px]:grid-cols-1"
+                >
+                  <div class="tab__left">
+                    <h2
+                      class="text-[#0D1317] text-[48px] font-[600] leading-[56px] tracking-[-1.44px] max-[500px]:text-[38px] max-[500px]:leading-[48px]"
+                    >
+                      Digitalization is increasingly becoming an important core
+                      business.
+                    </h2>
+                    <p
+                      class="text-[#5B5B5B] text-[18px] font-[500] leading-[30px] mt-[25px] mb-[15px]"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur sit amet eros blandit, hendrerit elit et, mattis
+                      purus. Vivamus commodo suscipit tellus et pellentesque.
+                    </p>
+                    <p
+                      class="text-[#5B5B5B] text-[18px] font-[500] leading-[30px] mb-[40px]"
+                    >
+                      Mattis purus. Vivamus commodo suscipit tellus et pellent.
+                      Curabitur sit amet eros blan esque.
+                    </p>
+                    <a class="flex gap-[8px]" href="pages/services.html">
+                      <p
+                        class="text-[#F58A07] text-[16px] font-[500] leading-[106.5%]"
+                      >
+                        See all services
+                      </p>
+                      <img src="images/pages/home/arrow.svg" alt="Arrow" />
+                    </a>
+                  </div>
+                  <div class="tab__right relative">
+                    <img
+                      class="w-full rounded-[20px] h-full object-cover relative"
+                      src="images/pages/home/services-1.png"
+                      alt=""
+                    />
+                    <div
+                      class="w-[20%] h-full rounded-bl-[20px] rounded-tl-[20px] bg-[#F58A07] mix-blend-multiply absolute bottom-0 top-0 left-0 max-[1100px]:h-auto"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-3 tab-content py-5">
+                <div
+                  class="tab__info mt-[80px] grid grid-cols-2 gap-x-[180px] gap-y-[40px] max-[1100px]:grid-cols-1"
+                >
+                  <div class="tab__left">
+                    <h2
+                      class="text-[#0D1317] text-[48px] font-[600] leading-[56px] tracking-[-1.44px] max-[500px]:text-[38px] max-[500px]:leading-[48px]"
+                    >
+                      Managing Risk Leads to More Efficient, Consistent
+                      Operations
+                    </h2>
+                    <p
+                      class="text-[#5B5B5B] text-[18px] font-[500] leading-[30px] mt-[25px] mb-[15px]"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur sit amet eros blandit, hendrerit elit et, mattis
+                      purus. Vivamus commodo suscipit tellus et pellentesque.
+                    </p>
+                    <p
+                      class="text-[#5B5B5B] text-[18px] font-[500] leading-[30px] mb-[40px]"
+                    >
+                      Mattis purus. Vivamus commodo suscipit tellus et pellent.
+                      Curabitur sit amet eros blan esque.
+                    </p>
+                    <a class="flex gap-[8px]" href="pages/services.html">
+                      <p
+                        class="text-[#F58A07] text-[16px] font-[500] leading-[106.5%]"
+                      >
+                        See all services
+                      </p>
+                      <img src="images/pages/home/arrow.svg" alt="Arrow" />
+                    </a>
+                  </div>
+                  <div class="tab__right relative">
+                    <img
+                      class="w-full rounded-[20px] h-full object-cover relative"
+                      src="images/pages/home/services-2.png"
+                      alt=""
+                    />
+                    <div
+                      class="w-[20%] h-full rounded-bl-[20px] rounded-tl-[20px] bg-[#F58A07] mix-blend-multiply absolute bottom-0 top-0 left-0 max-[1100px]:h-auto"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="jobs">
+        <div
+          class="container max-w-[1920px] mr-auto ml-auto grid grid-cols-2 max-[1100px]:grid-cols-1"
+        >
+          <img
+            class="w-full h-full object-cover"
+            src="images/pages/home/jobs-main.png"
+            alt=""
+          />
+          <div
+            class="jobs__info bg-[#F58A07] p-[128px] max-[700px]:pl-[20px] max-[700px]:pr-[20px]"
+          >
+            <h2
+              class="text-[#fff] text-[48px] font-[600] leading-[56px] tracking-[-1.44px] max-w-[532px] max-[500px]:text-[38px]"
+            >
+              Energy of a start-up combined with 30 years of experience.
+            </h2>
+            <button
+              onclick="location.href='pages/careers.html'"
+              class="bg-[#fff] text-[#F58A07] leading-[106.5%] text-[16px] font-[600] capitalize px-8 py-[18px] rounded-[17px] border-solid border-[1px] transition ease-in-out duration-500 border-[#F58A07] hover:bg-[#F58A07] hover:text-[#fff] hover:border-[#fff] mt-[40px] max-[400px]:px-[28px] max-[400px]:py-[16px]"
+            >
+              See Job Vacancies
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial pt-[128px] pb-[128px]">
+        <div
+          class="container max-w-[1320px] pl-[20px] pr-[20px] ml-[auto] mr-[auto]"
+        >
+          <div class="with-us-container grid grid-cols-1 lg:grid-cols-2">
+            <div class="flex flex-col justify-center items-start">
+              <h2
+                class="text-[#0D1317] text-[48px] font-[600] leading-[56px] tracking-[-1.44px] capitalize w-[78%] max-[900px]:w-[90%] max-[700px]:w-[95%] max-[600px]:w-[100%] max-[500px]:text-[38px]"
+              >
+                Finsweet was a dream to work with
+              </h2>
+
+              <p
+                class="text-[18px] text-[#5B5B5B] leading-[30px] mt-[24px] w-[75%] max-[700px]:w-[90%] max-[600px]:w-[100%]"
+              >
+                Maecenas efficitur scelerisque lorem, et varius lacus tincidunt
+                vel. Pellentesque a arcu vitae diam dapibus mattis vel vel orci.
+                Vivamus eleifend nec felis vel auctor.
+              </p>
+              <div class="flex items-center gap-[24px] mt-[40px]">
                 <img
-                  src="../images/components/home-section/image-1.svg"
-                  alt=""
+                  src="../images/components/testamonia/Image.svg"
+                  alt="testamonia"
                 />
+                <div>
+                  <p class="text-[24px] text-[#063255] leading-[30px]">
+                    Chikelu Ne
+                  </p>
+                  <p
+                    class="text-[#F58A07] text-[18px] font-[500] leading-[30px] tracking-[-1.44px]"
+                  >
+                    CEO at MazeAI
+                  </p>
+                </div>
               </div>
+            </div>
+            <div class="mt-[50px] relative">
+              <img
+                class="w-full relative"
+                src="../images/components/testamonia/women.png"
+                alt="pic"
+              />
+              <div class="absolute bottom-[10%] left-[10%]">
+                <button class="modal-open rounded-[50%] p-[17px] bg-white">
+                  <img
+                    src="../images/components/testamonia/Icon.svg"
+                    alt="testamonia"
+                  />
+                </button>
+                <span
+                  class="text-[#ffff] text-[18px] font-[600] leading-[30px] tracking-[-1.44px] capitalize"
+                  >play Video</span
+                >
+              </div>
+            </div>
+            <div
+              class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
+            >
+              <div
+                class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+              ></div>
+
+              <div
+                class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+              >
+                <div
+                  class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50"
+                >
+                  <svg
+                    class="fill-current text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                  >
+                    <path
+                      d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
+                    ></path>
+                  </svg>
+                  <span class="text-sm">(Esc)</span>
+                </div>
+
+                <div class="modal-content py-4 text-left px-6">
+                  <div class="flex justify-between items-center pb-3">
+                    <p class="text-2xl font-bold">
+                      The most liked video on Instagram
+                    </p>
+                    <div class="modal-close cursor-pointer z-50">
+                      <svg
+                        class="fill-current text-black"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                      >
+                        <path
+                          d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="modal-content w-full">
+                    <video width="100%" height="100%" controls>
+                      <source src="video/egg-video.mp4" type="video/mp4" />
+                      <source src="video/egg-video.ogg" type="video/ogg" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="flex justify-end pt-2">
+                    <button
+                      class="modal-close text-[#fff] border-[1px] border-solid border-[#F58A07] px-4 bg-[#F58A07] p-3 rounded-lg hover:bg-[#fff] hover:text-[#F58A07]"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news pt-[96px] pb-[96px] bg-[#DCEAF5]">
+        <div
+          class="container max-w-[1320px] pl-[20px] pr-[20px] ml-[auto] mr-[auto]"
+        >
+          <h2
+            class="text-[#0D1317] text-[48px] font-[600] leading-[56px] tracking-[-1.44px] capitalize mb-[64px] max-[500px]:text-[38px]"
+          >
+            Latest Blog & News
+          </h2>
+          <div
+            class="services__row grid grid-cols-3 gap-x-[40px] max-[1000px]:grid-cols-2 max-[1000px]:gap-y-[40px] max-[700px]:grid-cols-1"
+          >
+            <div
+              class="services__card group cursor-pointer bg-[#fff] rounded-[20px] hover:bg-[#063255]"
+              style="transition: 0.5s ease-in-out"
+            >
+            <div class="card__img">
+              <img
+                class="w-full"
+                src="images/pages/home/news-1.png"
+                alt="Digitalization"
+              />
+            </div>
+            <div class="card__desc p-[32px]">
+              <h3
+                class="text-[#0D1317] text-[24px] font-[500] leading-[106.5%] tracking-[-0.72px] group-hover:text-[#fff]"
+              >
+                Helping the next generation of leaders
+              </h3>
+              <p
+                class="text-[#5B5B5B] text-[18px] font-[500] leading-[28px] mt-[17px] mb-[24px] group-hover:text-[#fff]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur sit amet eros blandit, hendrerit elit et,
+              </p>
+              <a href="pages/blog.html" class="card__link flex gap-[8px]">
+                <p
+                  class="text-[#F58A07] text-[16px] font-[500] leading-[106.5%] hover:underline hover:text-[#e9b97e]"
+                >
+                  Learn More
+                </p>
+                <img src="images/pages/home/arrow.svg" alt="Arrow" />
+              </a>
+            </div>
+            </div>
+            <div
+              class="services__card group cursor-pointer bg-[#fff] rounded-[20px] hover:bg-[#063255]"
+              style="transition: 0.5s ease-in-out"
+            >
+            <div class="card__img">
+              <img
+                class="w-full"
+                src="images/pages/home/news-2.png"
+                alt="Digitalization"
+              />
+            </div>
+            <div class="card__desc p-[32px]">
+              <h3
+                class="text-[#0D1317] text-[24px] font-[500] leading-[106.5%] tracking-[-0.72px] group-hover:text-[#fff]"
+              >
+                Our internal process and longerm vision
+              </h3>
+              <p
+                class="text-[#5B5B5B] text-[18px] font-[500] leading-[28px] mt-[17px] mb-[24px] group-hover:text-[#fff]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur sit amet eros blandit, hendrerit elit et,
+              </p>
+              <a href="pages/blog.html" class="card__link flex gap-[8px]">
+                <p
+                  class="text-[#F58A07] text-[16px] font-[500] leading-[106.5%] hover:underline hover:text-[#e9b97e]"
+                >
+                  Learn More
+                </p>
+                <img src="images/pages/home/arrow.svg" alt="Arrow" />
+              </a>
+            </div>
+            </div>
+            <div
+              class="services__card group cursor-pointer bg-[#fff] rounded-[20px] hover:bg-[#063255]"
+              style="transition: 0.5s ease-in-out"
+            >
+            <div class="card__img">
+              <img
+                class="w-full"
+                src="images/pages/home/news-3.png"
+                alt="Digitalization"
+              />
+            </div>
+            <div class="card__desc p-[32px]">
+              <h3
+                class="text-[#0D1317] text-[24px] font-[500] leading-[106.5%] tracking-[-0.72px] group-hover:text-[#fff]"
+              >
+                Helping the next generation of leaders
+              </h3>
+              <p
+                class="text-[#5B5B5B] text-[18px] font-[500] leading-[28px] mt-[17px] mb-[24px] group-hover:text-[#fff]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur sit amet eros blandit, hendrerit elit et,
+              </p>
+              <a href="pages/blog.html" class="card__link flex gap-[8px]">
+                <p
+                  class="text-[#F58A07] text-[16px] font-[500] leading-[106.5%] hover:underline hover:text-[#e9b97e]"
+                >
+                  Learn More
+                </p>
+                <img src="images/pages/home/arrow.svg" alt="Arrow" />
+              </a>
+            </div>
             </div>
           </div>
         </div>
@@ -296,5 +1011,7 @@
       </div>
     </footer>
     <script src="js/header.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
