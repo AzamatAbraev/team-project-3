@@ -688,10 +688,6 @@ a,
   right: -20px;
 }
 
-.right-\[-40px\] {
-  right: -40px;
-}
-
 .right-\[10\%\] {
   right: 10%;
 }
@@ -718,6 +714,10 @@ a,
 
 .top-\[80px\] {
   top: 80px;
+}
+
+.right-\[-40px\] {
+  right: -40px;
 }
 
 .z-50 {
@@ -985,10 +985,6 @@ a,
   width: 0.875rem;
 }
 
-.w-8\/12 {
-  width: 66.666667%;
-}
-
 .w-\[100\%\] {
   width: 100%;
 }
@@ -1169,16 +1165,12 @@ a,
   gap: 45px;
 }
 
-.gap-\[8px\] {
-  gap: 8px;
-}
-
-.gap-\[\] {
-  gap: ;
-}
-
 .gap-\[50px\] {
   gap: 50px;
+}
+
+.gap-\[8px\] {
+  gap: 8px;
 }
 
 .gap-x-4 {
@@ -1220,16 +1212,6 @@ a,
 
 .gap-y-\[47px\] {
   row-gap: 47px;
-}
-
-.gap-x-\[\] {
-  -moz-column-gap: ;
-       column-gap: ;
-}
-
-.gap-x-\[50px\] {
-  -moz-column-gap: 50px;
-       column-gap: 50px;
 }
 
 .overflow-y-auto {
@@ -1306,10 +1288,6 @@ a,
   border-width: 1px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-solid {
   border-style: solid;
 }
@@ -1336,10 +1314,6 @@ a,
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
-.border-\[\] {
-  border-color: ;
 }
 
 .bg-\[\#063255\] {
@@ -1467,6 +1441,11 @@ a,
   padding-right: 24px;
 }
 
+.px-\[32px\] {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1515,11 +1494,6 @@ a,
 .py-\[96px\] {
   padding-top: 96px;
   padding-bottom: 96px;
-}
-
-.px-\[32px\] {
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .pb-3 {
@@ -1582,24 +1556,12 @@ a,
   padding-left: 38px;
 }
 
-.pl-\[76px\] {
-  padding-left: 76px;
-}
-
 .pr-\[20px\] {
   padding-right: 20px;
 }
 
 .pr-\[26px\] {
   padding-right: 26px;
-}
-
-.pr-\[32px\] {
-  padding-right: 32px;
-}
-
-.pr-\[97px\] {
-  padding-right: 97px;
 }
 
 .pt-2 {
@@ -1616,10 +1578,6 @@ a,
 
 .pt-\[176px\] {
   padding-top: 176px;
-}
-
-.pt-\[18px\] {
-  padding-top: 18px;
 }
 
 .pt-\[20px\] {
@@ -1656,6 +1614,10 @@ a,
 
 .pt-\[9px\] {
   padding-top: 9px;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
 }
 
 .text-left {
@@ -2040,10 +2002,6 @@ a,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\]:hover {
-  color: ;
-}
-
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -2322,9 +2280,5 @@ a,
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
   }
 }
